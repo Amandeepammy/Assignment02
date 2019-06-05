@@ -20,7 +20,7 @@ namespace TriangleSolver_Test
             int side2 = 10;
             int side3 = 10;
 
-            string expectedResult = "The input sides do form a Triangle And the formed Triangle is Equilateral";
+            string expectedResult = "The input sides do form a Triangle\n And the formed Triangle is Equilateral\n";
 
             //Act
             string actualResult = TriangleSolver.Analyze(side1,side2,side3);
@@ -38,7 +38,7 @@ namespace TriangleSolver_Test
             int side2 = 5;
             int side3 = 8;
 
-            string expectedResult = "The input sides do form a Triangle And the formed Triangle is Isosceles";
+            string expectedResult = "The input sides do form a Triangle\n And the formed Triangle is Isosceles\n";
 
             //Act
             string actualResult = TriangleSolver.Analyze(side1, side2, side3);
@@ -56,7 +56,7 @@ namespace TriangleSolver_Test
             int side2 = 6;
             int side3 = 7;
 
-            string expectedResult = "The input sides do form a Triangle And the formed Triangle is Scalene";
+            string expectedResult = "The input sides do form a Triangle\n And the formed Triangle is Scalene\n";
 
             //Act
             string actualResult = TriangleSolver.Analyze(side1, side2, side3);
@@ -68,13 +68,13 @@ namespace TriangleSolver_Test
         [Test]
         public void Analyze_test_input_side1_2_side2_3_side3_7_returns_Input_Sides_Do_not_Form_any_Triangle()
         {
-
+            
             //Arrange
             int side1 = 2;
             int side2 = 3;
             int side3 = 7;
 
-            string expectedResult = "The input sides do not form any Triangle";
+            string expectedResult = "The input sides do not form any Triangle\n";
 
             //Act
             string actualResult = TriangleSolver.Analyze(side1, side2, side3);
@@ -92,7 +92,7 @@ namespace TriangleSolver_Test
             int side2 = 32500;
             int side3 = 32500;
 
-            string expectedResult = "The input sides do form a Triangle And the formed Triangle is Equilateral";
+            string expectedResult = "The input sides do form a Triangle\n And the formed Triangle is Equilateral\n";
 
             //Act
             string actualResult = TriangleSolver.Analyze(side1, side2, side3);
@@ -110,7 +110,7 @@ namespace TriangleSolver_Test
             int side2 = 32000;
             int side3 = 30000;
 
-            string expectedResult = "The input sides do form a Triangle And the formed Triangle is Isosceles";
+            string expectedResult = "The input sides do form a Triangle\n And the formed Triangle is Isosceles\n";
 
             //Act
             string actualResult = TriangleSolver.Analyze(side1, side2, side3);
@@ -128,7 +128,7 @@ namespace TriangleSolver_Test
             int side2 = 29000;
             int side3 = 30000;
 
-            string expectedResult = "The input sides do form a Triangle And the formed Triangle is Scalene";
+            string expectedResult = "The input sides do form a Triangle\n And the formed Triangle is Scalene\n";
 
             //Act
             string actualResult = TriangleSolver.Analyze(side1, side2, side3);
@@ -146,7 +146,7 @@ namespace TriangleSolver_Test
             int side2 = 31000;
             int side3 = 500;
 
-            string expectedResult = "The input sides do not form any Triangle";
+            string expectedResult = "The input sides do not form any Triangle\n";
 
             //Act
             string actualResult = TriangleSolver.Analyze(side1, side2, side3);
